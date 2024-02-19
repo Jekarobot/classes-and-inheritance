@@ -1,32 +1,21 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true
+  'env': {
+    'browser': true,
+    'es2021': true,
+    'node': true
   },
-  extends: 'standard',
-  overrides: [
+  'extends': 'eslint:recommended',
+  'overrides': [
     {
-      files: ['**/__tests__/**/*.js', '**/*.test.js'],
-      env: {
-        jest: true
-      }
-    },
-    {
-      env: {
-        node: true
-      },
-      files: [
-        '.eslintrc.{js,cjs}'
-      ],
-      parserOptions: {
-        sourceType: 'script'
-      }
+      'files': ['**/*/*.test.js'],
+      'plugins': ['jest'],
+      'extends': ['plugin:jest/recommended'],
+      'rules': { 'jest/prefer-expect-assertions': 'off' }
     }
   ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+  'parserOptions': {
+    'ecmaVersion': 'latest',
+    'sourceType': 'module'
   },
-  rules: {
-  }
+  'rules': {}
 }
