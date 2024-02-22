@@ -1,4 +1,4 @@
-import { Undead } from '../undead.js'
+import Undead from '../undead.js'
 
 
 test('Create a Undead character', () => {
@@ -11,5 +11,5 @@ test('Create a Undead character', () => {
         attack: 25,
         defence: 25
     }
-    expect(undead).toBe(correct)
+    expect(undead).toEqual(correct)
 })

@@ -1,4 +1,4 @@
-import { Daemon } from '../daemon.js'
+import Daemon from '../daemon.js'
 
 
 test('Create a Daemon character', () => {
@@ -11,5 +11,5 @@ test('Create a Daemon character', () => {
                 attack: 10,
                 defence: 40
         }
-        expect(daemon).toBe(correct)
+        expect(daemon).toEqual(correct)
     })

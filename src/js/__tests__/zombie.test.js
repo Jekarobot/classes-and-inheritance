@@ -1,4 +1,4 @@
-import { Zombie } from '../zombie.js'
+import Zombie from '../zombie.js'
 
 
 test('Create a Zombie character', () => {
@@ -11,5 +11,5 @@ test('Create a Zombie character', () => {
         attack: 40,
         defence: 10
     }
-    expect(zombie).toBe(correct)
+    expect(zombie).toEqual(correct)
 })

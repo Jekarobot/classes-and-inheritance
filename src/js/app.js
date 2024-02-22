@@ -11,4 +11,4 @@ class Character {
     }
   }
 
-  export { Character }
+  export default Character

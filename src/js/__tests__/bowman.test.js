@@ -1,4 +1,4 @@
-import { Bowman } from '../bowman.js'
+import Bowman from '../bowman.js'
 
 
 test('Create a Bowman character', () => {
@@ -11,5 +11,5 @@ test('Create a Bowman character', () => {
         attack: 25,
         defenсe: 25
     }
-    expect(bowman).toBe(correct)
+    expect(bowman).toEqual(correct)
   })

@@ -1,4 +1,4 @@
-import { Swordsman } from '../swordsman.js'
+import Swordsman from '../swordsman.js'
 
 
 test('Create a Swordsman character', () => {
@@ -11,5 +11,5 @@ test('Create a Swordsman character', () => {
         attack: 40,
         defence: 10
     }
-    expect(swordsman).toBe(correct)
+    expect(swordsman).toEqual(correct)
   })
